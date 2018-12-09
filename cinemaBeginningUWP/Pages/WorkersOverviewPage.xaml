@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="cinemaBeginningUWP.Pages.WorkersOverviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cinemaBeginningUWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:cinemaBeginningUWP"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel Height="44">
+            <TextBlock Text="Сотрудники" FontSize="30" FontFamily="Segoe UI" Margin="5,0"/>
+            <Button Name="ButtonAdd" Height="40" Width="50" RelativePanel.LeftOf="ButtonMore" Margin="2" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontSize="20" Click="ButtonAdd_Click"/>
+            <Button Name="ButtonMore" Height="40" Width="50" RelativePanel.AlignRightWithPanel="True" Margin="2" FontFamily="Segoe MDL2 Assets" Content="&#xE712;" FontSize="20">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Name="RefreshMenuItem" Text="Обновить" Click="RefreshMenuItem_Click"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+        </RelativePanel>
+        <Grid Grid.Row="1">
+            <ProgressRing x:Name="progress" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150"/>
+            <GridView ItemsSource="{x:Bind Workers}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick" Name="WorkersGrid">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:Name="dataTemplate" x:DataType="data:Worker">
+                        <StackPanel>
+                            <Image Width="150" Height="200" Source="{x:Bind Photo}"/>
+                            <TextBlock Text="{x:Bind FullName}" FontSize="14" TextWrapping="WrapWholeWords"/>
+                            <!--<TextBlock Text="{x:Bind PostId}" FontSize="14"/>-->
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>

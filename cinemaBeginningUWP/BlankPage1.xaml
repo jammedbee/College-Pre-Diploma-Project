@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="cinemaBeginningUWP.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:cinemaBeginningUWP"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Button Height="30" Width="50" Name="refreshbutton" Content="45" Click="ref_Click"/>
+        <GridView ItemsSource="{x:Bind Films}" Name="gridVi" IsItemClickEnabled="True" ItemClick="GridView_ItemClick">
+            <GridView.ItemTemplate>
+                <DataTemplate x:Name="dataTemplate" x:DataType="data:Film">
+                    <StackPanel>
+                    <TextBlock Text="{x:Bind Name}" FontSize="16"/>
+                    <TextBlock Text="{x:Bind Description}" FontSize="12"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>

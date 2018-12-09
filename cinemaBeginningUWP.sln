@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cinemaBeginningUWP", "cinemaBeginningUWP\cinemaBeginningUWP.csproj", "{3055CFBF-E872-4809-B0B8-628F342BDB1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|ARM.Build.0 = Debug|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x64.ActiveCfg = Debug|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x64.Build.0 = Debug|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x64.Deploy.0 = Debug|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x86.ActiveCfg = Debug|x86
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x86.Build.0 = Debug|x86
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Debug|x86.Deploy.0 = Debug|x86
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|ARM.ActiveCfg = Release|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|ARM.Build.0 = Release|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|ARM.Deploy.0 = Release|ARM
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x64.ActiveCfg = Release|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x64.Build.0 = Release|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x64.Deploy.0 = Release|x64
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x86.ActiveCfg = Release|x86
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x86.Build.0 = Release|x86
+		{3055CFBF-E872-4809-B0B8-628F342BDB1E}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5FD38AE-E1A1-4C10-8663-B2AA33EA0486}
+	EndGlobalSection
+EndGlobal
