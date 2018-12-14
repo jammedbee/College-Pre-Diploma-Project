@@ -13,7 +13,7 @@ namespace cinemaBeginningUWP.Pages
 
         public MainLayoutPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             rootFrame.Navigated += ChangeBackButtonState;
         }
 

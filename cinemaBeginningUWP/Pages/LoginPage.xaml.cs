@@ -57,5 +57,10 @@ namespace cinemaBeginningUWP.Pages
             Password.IsEnabled = !Password.IsEnabled;
             Cancel.IsEnabled = !Cancel.IsEnabled;
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
     }
 }
