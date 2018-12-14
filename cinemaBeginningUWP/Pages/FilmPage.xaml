@@ -51,7 +51,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Name="Poster" HorizontalAlignment="Left" Height="400" Margin="25,50,25,0" VerticalAlignment="Top" Width="400" Stretch="Fill" Source="/Assets/user.png"/>
+            <Image Grid.Column="0" Name="Poster" HorizontalAlignment="Left" Height="400" Margin="25,50,25,0" VerticalAlignment="Top" Width="400" Stretch="Fill" Source="/Assets/film.png"/>
             <Button Name="UploadImageButton" Height="40" Width="240" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,478,0,0" Click="UploadImageButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="&#xE11C;" FontSize="20" FontFamily="Segoe MDL2 Assets"/>

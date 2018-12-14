@@ -153,6 +153,7 @@
     <Content Include="Assets\abstract-user-flat-1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\film.png" />
     <Content Include="Assets\user.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
